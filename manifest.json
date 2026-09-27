@@ -14,7 +14,7 @@
     }
   ],
   "start_url": "index.html?utm_source=pwa&ispwa=true",
-  "id": "/Balance-Order-System/index.html?ispwa=true",
+  "id": "Balance-Order-System",
   "display": "standalone",
   "background_color": "#ff6060",
   "theme_color": "#2c3e50",
