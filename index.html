@@ -59,7 +59,7 @@
     "description": "集眾多功能於一身的儲值點餐系統",
     "image": "https://i.ibb.co/1JJzGkTw/BHG-logo1.png",
     "url": "https://www.bhg-delicious.abrdns.com/?utm_source=JSON-LD",
-    "downloadUrl": "https://www.bhg-delicious.abrdns.com/sitemap.xml",
+    "downloadUrl": "https://www.bhg-delicious.abrdns.com/",
     "hasPart": {
       "@type": "CreativeWork",
       "name": "Sitemap",
@@ -70,7 +70,7 @@
       "@type": "Person",
       "name": "gtes10301"
     },
-    "datePublished": "2026-09-22",
+    "datePublished": "2026-09-27",
     "publisher": {
       "@type": "Organization",
       "name": "BHG-delicious"
@@ -84,7 +84,7 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "TWD",
-      "url": "https://www.bhg-delicious.abrdns.com/sitemap.xml"
+      "url": "https://www.bhg-delicious.abrdns.com/"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -208,7 +208,6 @@
   </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8804930884892595"crossorigin="anonymous"></script>
-  <script async src="https://ampproject.org"></script>
   <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
 
   <script>
@@ -249,7 +248,7 @@
     const baseGasUrl = "https://script.google.com/macros/s/AKfycby8avMBWXM4N6XRRFcj2cgWffaRv7ReCc_4IrjrrQ1_OqjEMHxPYqpfrB_asWGKnUFCOg/exec";
     const targetUrl = new URL(baseGasUrl);
     const githubParams = new URLSearchParams(window.location.search);
-    targetUrl.searchParams.set('utm_source', 'github_pages');
+    targetUrl.searchParams.set('utm_source', 'github_pages_abrdns');
     targetUrl.searchParams.set('utm_medium', 'github');
     targetUrl.searchParams.set('utm_campaign', 'balance-order-system');
     githubParams.forEach((value, key) => {
@@ -259,13 +258,13 @@
     targetUrl.hash = window.location.hash;
 
     if (screen.orientation && screen.orientation.lock) {
-      screen.orientation.lock('landscape')
-        .then(() => console.log('已成功鎖定為橫螢幕'))
+      screen.orientation.lock('portrait')
+        .then(() => console.log('已成功鎖定為直螢幕'))
         .catch((error) => console.error('鎖定失敗：', error));
     }
   </script>
   
-  <style amp-custom>
+  <style>
     html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #ffffff; }
     iframe { width: 100%; height: 100%; border: none; display: block; }
     notBeSeen {height: 0; width: 0; display: none; visibility: hidden}
@@ -431,7 +430,7 @@
         <p>使用 Google Apps Script 開發 · DeepSeek 輔助</p>
         <p>連結 GA4 · GTM · GSC · GCP 全方位Google生態</p>
         <p>僅供大家政便當廠及其子企業使用</p>
-        <p>本站網址：https://bhgdelicious.pse.is/balance-order-system_github</p>
+        <p>本站網址：https://bhgdelicious.pse.is/balance-order-system</p>
     </footer>
   </body>
   </html>
@@ -445,34 +444,10 @@
     description：集眾多功能於一身的儲值點餐系統<br>
     keywords：大家政, 便當廠, 大家政便當廠, 大家政便當廠資訊部, 儲值系統, 點餐系統, 儲值點餐系統, Google Apps Script, Apps Script, GAS, GitHub<br>
     author：gtes10301<br><br>
-    sitemap.xml：<a role="link" href="https://bhg-delicious.github.io/Balance-Order-System/sitemap.xml">https://bhg-delicious.github.io/Balance-Order-System/sitemap.xml</a><br>
-    sitemap.txt：<a role="link" href="https://bhg-delicious.github.io/Balance-Order-System/sitemap.txt">https://bhg-delicious.github.io/Balance-Order-System/sitemap.txt</a><br>
-    robots.txt：<a role="link" href="https://bhg-delicious.github.io/Balance-Order-System/robots.txt">https://bhg-delicious.github.io/Balance-Order-System/robots.txt</a><br>
-    <a role="link" title="BHG-logo" href="https://bhg-delicious.github.io/Balance-Order-System/favicon.ico"><img alt="BHG-logo" title="BHG-logo" src="https://i.ibb.co/1JJzGkTw/BHG-logo1.png"></img></a><br>
-
-    <a href="#main" title="skip-link" role="link">skip to main</a>
-    <header role="banner" title="header">
-      <div>This is the header.</div>
-    </header>
-    <nav role="navigation" title="nav">
-      <div>This is the navigation.</div>
-    </nav>
-    <main role="main" id="main" title="main" accesskey="m">
-      <div>This is the main content.</div>
-      <section role="region" title="section">
-        <div>This is a section.</div>
-      </section>
-      <article role="article" title="article">
-        <div>This is an article.</div>
-      </article>
-      <aside role="complementary" title="aside">
-        <div>This is an aside.</div>
-      </aside>
-      <button title="buttom" role="button">button</button>
-    </main>
-    <footer role="contentinfo" title="footer">
-      <div>This is the footer.</div>
-    </footer>
+    sitemap.xml：<a role="link" href="https://www.bhg-delicious.abrdns.com/sitemap.xml">https://www.bhg-delicious.abrdns.com/sitemap.xml</a><br>
+    sitemap.txt：<a role="link" href="https://www.bhg-delicious.abrdns.com/sitemap.txt">https://www.bhg-delicious.abrdns.com/sitemap.txt</a><br>
+    robots.txt：<a role="link" href="https://www.bhg-delicious.abrdns.com/robots.txt">https://www.bhg-delicious.abrdns.com/robots.txt</a><br>
+    <a role="link" title="BHG-logo" href="https://www.bhg-delicious.abrdns.com/favicon.ico"><img alt="BHG-logo" title="BHG-logo" src="https://i.ibb.co/1JJzGkTw/BHG-logo1.png"></img></a><br>
   </div>
 
   <script>
