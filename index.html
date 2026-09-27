@@ -58,8 +58,8 @@
     "name": "大家政便當廠-儲值點餐系統",
     "description": "集眾多功能於一身的儲值點餐系統",
     "image": "https://i.ibb.co/1JJzGkTw/BHG-logo1.png",
-    "url": "https://www.bhg-delicious.abrdns.com/?utm_source=JSON-LD",
-    "downloadUrl": "https://www.bhg-delicious.abrdns.com/",
+    "url": "https://www.bhg-delicious.abrdns.com/?utm_source=JSON-LD_url",
+    "downloadUrl": "https://www.bhg-delicious.abrdns.com/?utm_source=JSON-LD_downloadUrl",
     "hasPart": {
       "@type": "CreativeWork",
       "name": "Sitemap",
@@ -84,7 +84,7 @@
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "TWD",
-      "url": "https://www.bhg-delicious.abrdns.com/"
+      "url": "https://www.bhg-delicious.abrdns.com/?utm_source=JSON-LD_offers"
     },
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -248,7 +248,7 @@
     const baseGasUrl = "https://script.google.com/macros/s/AKfycby8avMBWXM4N6XRRFcj2cgWffaRv7ReCc_4IrjrrQ1_OqjEMHxPYqpfrB_asWGKnUFCOg/exec";
     const targetUrl = new URL(baseGasUrl);
     const githubParams = new URLSearchParams(window.location.search);
-    targetUrl.searchParams.set('utm_source', 'github_pages_abrdns');
+    targetUrl.searchParams.set('utm_source', 'abrdns');
     targetUrl.searchParams.set('utm_medium', 'github');
     targetUrl.searchParams.set('utm_campaign', 'balance-order-system');
     githubParams.forEach((value, key) => {
