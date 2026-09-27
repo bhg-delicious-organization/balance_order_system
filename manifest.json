@@ -13,7 +13,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html?ispwa=true",
+  "start_url": "index.html?utm_source=pwa&ispwa=true",
   "id": "/Balance-Order-System/index.html?ispwa=true",
   "display": "standalone",
   "background_color": "#ff6060",
