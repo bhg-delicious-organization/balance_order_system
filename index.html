@@ -487,6 +487,17 @@
       }
     })();
 
+    (function () {
+      if (githubParams.has('debug') && githubParams.get('debug') === 'true') {
+        const script = document.createElement('script');
+        script.src = '//cdn.jsdelivr.net/npm/eruda';
+        script.onload = function () {
+          eruda.init();
+        };
+        document.body.appendChild(script);
+      }
+    })();
+
     // 【關鍵機制】檢查當前 iframe 網址，若沒有帶有該用戶的推播 ID，就將其更新
     function handleGasUrlUpdate(userId) {
       console.log("當前用戶推播ID:", userId);
