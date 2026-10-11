@@ -508,6 +508,24 @@
       gasFrame.src = baseGasUrl + "?pushId=" + userId;
       
     }
+
+    function getPWADisplayMode() {
+      if (document.referrer.startsWith('android-app://'))
+        return 'twa'; // Google Play 商店
+      if (window.matchMedia('(display-mode: browser)').matches)
+        return 'browser'; // 瀏覽器
+      if (window.matchMedia('(display-mode: standalone)').matches || navigator.standalone)
+        return 'standalone'; // PWA 應用
+      if (window.matchMedia('(display-mode: minimal-ui)').matches)
+        return 'minimal-ui';
+      if (window.matchMedia('(display-mode: fullscreen)').matches)
+        return 'fullscreen';
+      if (window.matchMedia('(display-mode: window-controls-overlay)').matches)
+        return 'window-controls-overlay'; // PWA 應用
+    
+      return 'unknown';
+    }
+    console.log(getPWADisplayMode());
   </script>
   <script type="module">
     // Import the functions you need from the SDKs you need
