@@ -255,6 +255,9 @@
       targetUrl.searchParams.set(key, value);
     });
     targetUrl.searchParams.set('env', 'github');
+    if (getPWADisplayMode() === 'standalone') {
+      targetUrl.searchParams.set('isPWA', 'true');
+    }
     targetUrl.hash = window.location.hash;
 
     if (screen.orientation && screen.orientation.lock) {
