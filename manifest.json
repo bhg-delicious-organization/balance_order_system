@@ -66,6 +66,7 @@
     }
   ],
   "id": "Balance-Order-System",
+  "version": "2.9.4",
   "dir": "ltr",
   "display_override": [
     "window-controls-overlay",
